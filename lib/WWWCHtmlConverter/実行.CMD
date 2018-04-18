@@ -1,5 +1,0 @@
-ï»¿rem call ruby WWWC_HTML_Converter "C:\Users\ban\Dropbox\•Û‘¶ƒtƒ@ƒCƒ‹\ƒvƒƒOƒ‰ƒ€\WWWC\ban" "\\LS210DCC3\share\‹¤—L\HTML\Link\"
-
-call ruby WWWC_HTML_Converter.rb "C:\Users\ban\Dropbox\•Û‘¶ƒtƒ@ƒCƒ‹\ƒvƒƒOƒ‰ƒ€\WWWC\ban" "L:\‹¤—L\HTML\Link"
-
-pause

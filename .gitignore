@@ -10,3 +10,7 @@
 # rspec failure tracking
 .rspec_status
 /WWWCHtmlConverter.cld
+bundle install.cmd
+/実行.cmd
+/lib/WWWCHtmlConverter/WWWCHTMLConverter.css
+/lib/WWWCHtmlConverter/実行.CMD
