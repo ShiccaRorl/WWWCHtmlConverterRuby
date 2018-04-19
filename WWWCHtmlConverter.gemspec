@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["ShiccaRorl"]
   spec.email         = ["shicca.rorl@gmail.com"]
 
-  spec.summary       = %q{WWWC → db → html}
-  spec.description   = %q{WWWC → db → html Converter}
+  spec.summary       = %q{WWWC → html}
+  spec.description   = %q{WWWC → html Converter}
   spec.homepage      = "https://rubygems.org/"
   spec.license       = "MIT"
 
@@ -35,5 +35,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
 
   spec.add_dependency 'thor'
+  spec.add_dependency 'tk'
 
 end

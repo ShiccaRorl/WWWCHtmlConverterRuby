@@ -9,12 +9,12 @@ module WWWCHTMLConverter
   # Your code goes here...
   class CommandLine < Thor
     attr_accessor :wwwc
-    desc "in WWWwwCのディレクトリ",　"out アウトプットディレクトリ"
+    desc "in_to WWWwwCのディレクトリ",　"out アウトプットディレクトリ"
     def initialize()
       @wwwc = WWWC.new()
     end
 
-    def in(dir_path)
+    def in_to(dir_path)
       @wwwc.dir_path_in = dir_path
     end
 
@@ -103,7 +103,7 @@ module WWWCHTMLConverter
       }
 
       @items.each{|wwwc|
-        f = File.open(wwwc.item_dat_pach, 'r:utf-8'){|f|
+        f = File.open(wwwc.item_dat_pach, 'r:SJIS'){|f|
           @source = f.read  # 全て読み込む
         }
 
