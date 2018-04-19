@@ -1,6 +1,5 @@
 # -*- encoding: utf-8 -*-
-p 'index'
-p 'a'.encoding
+
 
 require "erb"
 require "thor"
@@ -9,7 +8,7 @@ module WWWCHTMLConverter
   # Your code goes here...
   class CommandLine < Thor
     attr_accessor :wwwc
-    desc "in_to WWWwwCのディレクトリ",　"out アウトプットディレクトリ"
+    desc "in_to WWWCのディレクトリ",　"out アウトプットディレクトリ"
     def initialize()
       @wwwc = WWWC.new()
     end
@@ -89,7 +88,7 @@ module WWWCHTMLConverter
       Dir.glob("Item.dat/**/*").each{|dir|
         wwwc = WWWC_HTML_Converter.new
         wwwc.item_date_pach = dir
-        pp dir.encode(Encoding::SJIS)
+        p dir.encode(Encoding::SJIS)
       }
 
       # ディレクトリリスト作成
@@ -239,7 +238,7 @@ module WWWCHTMLConverter
 
       # データベース
       @db_file_name = ARGV[0]
-      @db = Sequel.sqlite(@db_file_name)
+      #@db = Sequel.sqlite(@db_file_name)
 
       # データベースからデータ取得
       dataset = @db[:index].where(:Private => false).order(:Datetime)
@@ -261,17 +260,6 @@ module WWWCHTMLConverter
       @day_body = File.open("./../day_body.erb").read
       @all_body = File.open("./../all_body.erb").read
 
-    end
-
-    def keyword()
-      @keywords = @db[:keyword].select(:Keyword).all
-
-      @keyword = ""
-      @keywords.each{|i|
-        i.each{|key, value|
-          @keyword  = value + ", " + @keyword}
-      }
-      @keyword.encode!("UTF-8")
     end
 
     def create_body()
@@ -346,5 +334,5 @@ module WWWCHTMLConverter
   end
 end
 
-link = WWWC_HTML_Converter::Link.new(ARGV[0], ARGV[1]) #
+#link = WWWC_HTML_Converter::Link.new(ARGV[0], ARGV[1]) #
 
