@@ -7,4 +7,4 @@ gemspec
 
 
 gem 'thor'
-gem 'tk'
+
