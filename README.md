@@ -22,7 +22,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+WWWCとは
+[nakka.com](https://www.nakka.com/)
+指定したホームページの更新情報をチェックしてくれるソフトです。
+そのリンクのデータをHtmlに変換します。
+WWWC好きのWWWC好きによるWWWCの為のソフトです。
 
 ## Development
 
