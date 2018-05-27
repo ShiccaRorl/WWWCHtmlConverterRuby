@@ -9,13 +9,13 @@ module WWWCHTMLConverter
     def initialize()
       @config = WWWCHTMLConverter::Config.new()
       @dir_list = []
-
+      self.dir_list(@config.www_html_in_path)
     end
 
     def dir_kai(arr)
         return 0 if arr.shift.empty? #配列が空のときは終了
 
-        self.dir_list(arr)
+        self.dir_kai(arr)
     end
 
     def dir_list(dir)

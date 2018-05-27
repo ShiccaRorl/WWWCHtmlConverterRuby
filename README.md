@@ -26,7 +26,7 @@ WWWCとは
 [nakka.com](https://www.nakka.com/)
 指定したホームページの更新情報をチェックしてくれるソフトです。
 そのリンクのデータをHtmlに変換します。
-WWWC好きのWWWC好きによるWWWCの為のソフトです。
+WWWC好きのWWWC好きによるWWWC好きにのためのソフトです。
 
 ## Development
 

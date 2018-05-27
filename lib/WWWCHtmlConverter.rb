@@ -1,9 +1,12 @@
 # -*- encoding: utf-8 -*-
 
 require "WWWCHtmlConverter/version"
-require "WWWCHtmlConverter/WWWCHTMLConverterLib"
+
 require "WWWCHtmlConverter/Config"
 require "WWWCHtmlConverter/Template"
+
+require "WWWCHtmlConverter/WWWCHTMLConverterLib"
+
 
 module WWWCHtmlConverter
 
