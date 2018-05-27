@@ -2,8 +2,8 @@
 
 require "WWWCHtmlConverter/version"
 
-require "WWWCHtmlConverter/Config"
-require "WWWCHtmlConverter/Template"
+require "WWWCHtmlConverter/WWWCHTMLConverter_Config"
+require "WWWCHtmlConverter/WWWCHTMLConverter_Template"
 
 require "WWWCHtmlConverter/WWWCHTMLConverterLib"
 

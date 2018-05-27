@@ -5,8 +5,7 @@ config = '# -*- encoding: utf-8 -*-
 
 module WWWCHtmlConverter
   class Config
-    attr_accessor :home_title, :top_home_page, :home_description, :css_theme_path
-    attr_accessor :www_html_out_path, :www_html_in_path
+    attr_accessor :home_title, :top_home_page, :home_description, :css_theme_path, :www_html_in_path, :www_html_out_path
     def initialize()
       # ホームページタイトル
       @home_title = ""
@@ -15,7 +14,7 @@ module WWWCHtmlConverter
       @top_home_page = ""
 
       # ホームページのdescription
-      @home_description = "日々勉強中"
+      @home_description = ""
 
       # CSS Path
       @css_theme_path = "./css"
