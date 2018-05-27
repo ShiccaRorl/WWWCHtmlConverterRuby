@@ -21,7 +21,7 @@ module WWWCHtmlConverter
       @css_theme_path = "./css"
 
       # WWCのディレクトリ
-      @www_html_in_path = ""
+      @www_html_in_path = "./../../../../保存ファイル/プログラム/WWWC/ban/"
 
       # ｈｔｍｌの作成先
       @www_html_out_path = ""
