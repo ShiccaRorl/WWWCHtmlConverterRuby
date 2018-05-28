@@ -7,7 +7,7 @@ module WWWCHTMLConverter
   class WWWC
     attr_accessor :dir_list
     def initialize()
-      @config = Config.new()
+      @config = WWWCHTMLConverter::Config.new()
       @dir_list = []
       self.dir_list(@config.www_html_in_path)
     end
