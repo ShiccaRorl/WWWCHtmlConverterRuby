@@ -15,4 +15,4 @@ module WWWCHtmlConverter
 
 end
 
-wwwc = WWWCHTMLConverter::WWWC.new()
+wwwc = WWWCHtmlConverter::WWWC.new()
