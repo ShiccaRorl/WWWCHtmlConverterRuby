@@ -17,7 +17,7 @@ module WWWCHtmlConverter
       @home_description = ""
 
       # CSS Path
-      @css_theme_path = "./css"
+      @css_theme_path = "./style.css"
 
       # WWCのディレクトリ
       @www_html_in_path = ""
