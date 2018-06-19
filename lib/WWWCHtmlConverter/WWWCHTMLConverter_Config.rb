@@ -4,7 +4,7 @@ config = ""
 config = '# -*- encoding: utf-8 -*-
 
 module WWWCHtmlConverter
-  class Config
+  class WWWCConfig
     attr_accessor :home_title, :top_home_page, :home_description, :css_theme_path, :www_html_in_path, :www_html_out_path
     def initialize()
       # ホームページタイトル
@@ -30,16 +30,16 @@ end
 '
 
 # ディレクトリの確認
-if Dir.exist?("./Config") == false then
+if Dir.exist?("./WWWCConfig") == false then
   # ディレクトリの作成
-  Dir.mkdir('Config')
+  Dir.mkdir('WWWCConfig')
 end
 
-if File.exist?("./Config/Config.rb") == false then
-  File.open("./Config/Config.rb", "w:utf-8") do |f|
+if File.exist?("./WWWCConfig/WWWCConfig.rb") == false then
+  File.open("./WWWCConfig/WWWCConfig.rb", "w:utf-8") do |f|
     f.puts(config)
   end
 else
-  require './Config/Config'
+  require './WWWCConfig/WWWCConfig'
 end
 

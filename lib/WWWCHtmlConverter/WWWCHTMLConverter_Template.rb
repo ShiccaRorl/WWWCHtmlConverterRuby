@@ -42,34 +42,34 @@ footer = '
 
 
 # ディレクトリの確認
-if Dir.exist?("./Config/template") == false then
+if Dir.exist?("./WWWCConfig/template") == false then
 # ディレクトリの作成
-  Dir.mkdir('Config/template')
+  Dir.mkdir('WWWCConfig/template')
 end
 
 # header
-if File.exist?("./Config/template/header.erb") == false then
-    File.open("./Config/template/header.erb", "w:utf-8") do |f|
+if File.exist?("./WWWCConfig/template/header.erb") == false then
+    File.open("./WWWCConfig/template/header.erb", "w:utf-8") do |f|
     f.puts(header)
   end
 else
-  @header   = File.open("./Config/template/header.erb").read
+  @header   = File.open("./WWWCConfig/template/header.erb").read
 end
 
 # footer
-if File.exist?("./Config/template/footer.erb") == false then
-    File.open("./Config/template/footer.erb", "w:utf-8") do |f|
+if File.exist?("./WWWCConfig/template/footer.erb") == false then
+    File.open("./WWWCConfig/template/footer.erb", "w:utf-8") do |f|
     f.puts(footer)
   end
 else
-  @footer   = File.open("./Config/template/footer.erb").read
+  @footer   = File.open("./WWWCConfig/template/footer.erb").read
 end
 
 # body
-if File.exist?("./Config/template/body.erb") == false then
-    File.open("./Config/template/body.erb", "w:utf-8") do |f|
+if File.exist?("./WWWCConfig/template/body.erb") == false then
+    File.open("./WWWCConfig/template/body.erb", "w:utf-8") do |f|
     f.puts(body)
   end
 else
-  @body     = File.open("./Config/template/body.erb").read
+  @body     = File.open("./WWWCConfig/template/body.erb").read
 end

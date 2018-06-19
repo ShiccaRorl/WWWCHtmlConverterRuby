@@ -2,12 +2,12 @@
 
 require "erb"
 
-module WWWCHTMLConverter
+module WWWCHtmlConverter
   # Your code goes here...
   class WWWC
     attr_accessor :dir_list
     def initialize()
-      @config = WWWCHTMLConverter::Config.new()
+      @config = WWWCHtmlConverter::WWWCConfig.new()
       @dir_list = []
       self.dir_list(@config.www_html_in_path)
     end
