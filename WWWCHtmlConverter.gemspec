@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{WWWC → html}
   spec.description   = %q{WWWC → html Converter}
-  spec.homepage      = "https://rubygems.org/gems/WWWCHtmlConverter"
+  spec.homepage      = "https://github.com/ShiccaRorl/WWWCHtmlConverterRuby"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
