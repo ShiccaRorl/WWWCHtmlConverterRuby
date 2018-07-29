@@ -30,7 +30,7 @@ WWWCとは
 
 そのリンクのデータをHtmlに変換します。
 
-WWWC好きのWWWC好きによるWWWC好きにのためのソフトです。
+「WWWC」好きの「WWWC」好きによる「WWWC」好きにのためのソフトです。
 
 
 ## Development

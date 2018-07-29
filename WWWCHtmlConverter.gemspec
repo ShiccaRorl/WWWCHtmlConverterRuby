@@ -10,7 +10,17 @@ Gem::Specification.new do |spec|
   spec.email         = ["shicca.rorl@gmail.com"]
 
   spec.summary       = %q{WWWC → html}
-  spec.description   = %q{WWWC → html Converter}
+
+  spec.description   = %q{WWWCとは
+
+[nakka.com](https://www.nakka.com/)
+
+指定したホームページの更新情報をチェックしてくれるソフトです。
+
+そのリンクのデータをHtmlに変換します。
+
+「WWWC」好きの「WWWC」好きによる「WWWC」好きにのためのソフトです。}
+
   spec.homepage      = "https://github.com/ShiccaRorl/WWWCHtmlConverterRuby"
   spec.license       = "MIT"
 
